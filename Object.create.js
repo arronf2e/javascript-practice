@@ -6,6 +6,6 @@ var a = new Person('a')
 
 var b = Object.create(Person.prototype)
 
-var c = Object.create(Person)
+var c = Object.create(a)
 
-alert(c.__proto__.__proto__ === a.__proto__)
+alert(a.__proto__ === c.__proto__.__proto__)
